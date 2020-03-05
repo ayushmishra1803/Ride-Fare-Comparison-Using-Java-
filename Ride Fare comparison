@@ -1,4 +1,4 @@
-Introduction:
+Description:
 
 This is a dynamic website which is based on J2EE , this compares the fare of your ride based upon the source and destination address. It uses current taxi providers like Uber, Rapido etc to generate it's data for comparison.
 
