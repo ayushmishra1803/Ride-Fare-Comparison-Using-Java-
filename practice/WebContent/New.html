@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign Up</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  
+  background-image: url("image/home.jpg");
+
+  min-height: 1330px;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 20px;
+  max-heigth: 700px;
+  max-width: 700px;
+  padding: 26px;
+  background-color: yellow;
+  opacity: .8;
+}
+
+
+input[type=text], input[type=password] , input[type=date], input[type=email], input[type=number]{
+  width: 100%;
+  padding: 24px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,  input[type=date]:focus, input[type=email]:focus, input[type=number]:focus  {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="bg-img">
+  <form action= "next" class="container">
+    <h1>SignUP</h1>
+
+    <label for="first name"><b> First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" required>
+
+    <label for="last name"><b>last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required>
+
+    <label for="gender"><b>Gender</b></label>
+    <input type="text" placeholder="Enter Last Name" name="gender" required>
+    
+ <label for="date"><b>Date Of Birth</b></label>
+    <input type="date" placeholder="Date Of Birth" name="dob" required>
+
+<label for="email"><b> Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+
+<label for="email"><b> Reenter-Email</b></label>
+    <input type="email" placeholder="ReEnter Email" name="remail" required>
+
+    
+<label for="number"><b>Mobile Number</b></label>
+    <input type="number" placeholder="Enter Mobile Number" name="mnumber" required>
+
+<label for="username"><b>User Name</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pass" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="repass" required>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <button type="submit" class="btn">Sign UP</button>
+
+
+  </form>
+</div>
+
+</body>
+</html>

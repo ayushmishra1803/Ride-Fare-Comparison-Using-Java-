@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<style>
+
+body
+{
+position: relative;
+text-align: center;
+colour: white;
+ margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.container {
+  position: relative;
+  text-align: left;
+  color: yellow;
+  background: black;
+
+}
+.text-block {
+  position: absolute;
+  top: 450px;
+  left: 30px;
+  background-color: black;
+  opacity: 0.6;
+  color: white;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+p.italic {
+ font-size:80px;
+  font-style:italic;
+  color:yellow;
+
+}
+
+
+m.italic {
+ font-size:100px;
+  font-style:italic;
+  color:yellow;
+
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 15px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body class="fixed-footer pace-done">
+
+<div class="container">
+
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="http://localhost:8080/practice/home.html">Home</a><br><hr>
+  <a href="http://localhost:8080/practice/login.html">login</a><br><hr>
+ 
+  <a href="http://localhost:8080/practice/about.html">About Us</a><br><hr>
+  <!-- <a href="http://localhost:8080/practice/trems.html">Terms and condition</a><br><hr>
+   <a href="http://localhost:8080/practice/Driverlogin.html">Driver Login</a><br><hr> -->
+   
+</div>
+
+<div id="main">
+  
+  <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776; </span>
+</div>
+<img src="image/home.jpg" style="width:100%;">
+  
+
+  <div class="text-block">
+  	
+   <m class="italic" > Compare Before <br>  &nbsp&nbsp&nbsp&nbsp you Book </m>
+  
+       
+    </div>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+
+</script>
+About
+</body>
+</html>

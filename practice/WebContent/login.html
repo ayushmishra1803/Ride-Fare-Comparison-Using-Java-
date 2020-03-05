@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>login</title>
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body
+{
+position: relative;
+text-align: center;
+colour: white;
+ margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.container1 {
+  position: relative;
+  text-align: left;
+  color: yellow;
+  background: black;
+
+}
+.text-block {
+  position: absolute;
+  top: 450px;
+  left: 30px;
+  background-color: black;
+  opacity: 0.6;
+  color: white;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+p.italic {
+ font-size:80px;
+  font-style:italic;
+  color:yellow;
+
+}
+
+
+m.italic {
+ font-size:100px;
+  font-style:italic;
+  color:yellow;
+
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 10px;
+  color: yellow;
+  background-color: black;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.bg-img {
+  /* The image used */
+  background-image: url("image/home.jpg");
+  min-height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.container {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  margin: 20px;
+  max-heigth: 700px;
+  max-width: 500px;
+  padding: 26px;
+  background-color: Yellow;
+  color: black;
+  opacity: .8;
+  
+
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 24px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: black;
+  color: white;
+  padding: 16px 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="container1">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="http://localhost:8080/practice/newhome.html">Home</a><br><hr>
+  <a href="http://localhost:8080/practice/login.html">login</a><br><hr>
+  <a href="http://localhost:8080/practice/New.html">Sign Up</a><br><hr>
+ <!--<a href="http://localhost:8080/practice/about.html">About Us</a><br><hr>  -->
+  
+  <!-- <a href="http://localhost:8080/practice/trems.html">Terms and condition</a><br><hr>
+   <a href="http://localhost:8080/practice/Driverlogin.html">Driver Login</a><br><hr> -->
+   
+</div>
+
+<div id="main">
+  
+  <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776; </span>
+  <img src="image/log.png" align="right" style="width:4%;">
+</div>
+
+<div class="bg-img">
+  <form action= "login_page" class="container">
+    <h1 >Login</h1>
+
+    <label for="username"><b>UserName</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" >Login</button>
+    <br>
+    <br>
+
+ <a href="http://localhost:8080/practice/New.html" >&nbsp;Create a new account</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://localhost:8080/practice/forgot.html">Forgot Password </a>
+  </form>
+</div>
+
+
+  
+
+</div>  
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+
+</script>
+
+
+</body>
+</html>
